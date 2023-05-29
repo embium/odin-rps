@@ -20,42 +20,23 @@ function playRound(playerSelection) {
     }
 
     if (computerSelection == "rock") {
-        if (playerSelection == "paper") {
-            results = `You win, ${playerSelection} beats ${computerSelection}!`;
-            won = true;
-        }
-
-        if (playerSelection == "scissors") {
-            results = `Computer wins, ${computerSelection} beats ${playerSelection}!`;
-        }
+        if (playerSelection == "paper") won = true;
     }
 
     else if (computerSelection == "paper") {
-        if (playerSelection == "scissors") {
-            results = `You win, ${playerSelection} beats ${computerSelection}!`;
-            won = true;
-        }
-
-        if (playerSelection == "rock") {
-            results = `Computer wins, ${computerSelection} beats ${playerSelection}!`;
-        }
+        if (playerSelection == "scissors") won = true;
     }
 
     else if (computerSelection == "scissors") {
-        if (playerSelection == "rock") {
-            results = `You win, ${playerSelection} beats ${computerSelection}!`;
-            won = true;
-        }
-
-        if (playerSelection == "paper") {
-            results = `Computer wins, ${computerSelection} beats ${playerSelection}!`;
-        }
+        if (playerSelection == "rock") won = true;
     }
 
     if (!tied) {
         if (won) {
+            results = `You win, ${playerSelection} beats ${computerSelection}!`;
             wins++;
         } else {
+            results = `Computer wins, ${computerSelection} beats ${playerSelection}!`;
             losses++;
         }
 
