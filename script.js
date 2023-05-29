@@ -16,7 +16,7 @@ function playRound(playerSelection) {
     let computerSelection = getComputerChoice();
 
     if(playerSelection == computerSelection) {
-        results = "It's a tie game!";
+        results = "It's a tie!";
         tied = true;
     }
 
