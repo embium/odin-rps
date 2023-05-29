@@ -1,0 +1,11 @@
+.rps {
+    text-align: center;
+}
+.rps img {
+    width: 400px;
+    cursor: pointer;
+}
+
+#results {
+    margin: 30px;
+}
